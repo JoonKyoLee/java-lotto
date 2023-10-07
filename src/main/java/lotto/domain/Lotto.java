@@ -36,7 +36,7 @@ public class Lotto {
 
     private boolean hasInRange(List<Integer> numbers){
         return numbers.stream()
-                .filter(number -> LOTTO_FIRST_NUMBER < number && number < LOTTO_LAST_NUMBER)
+                .filter(number -> LOTTO_FIRST_NUMBER <= number && number <= LOTTO_LAST_NUMBER)
                 .count() == LOTTO_NUMBER_SIZE;
     }
 
