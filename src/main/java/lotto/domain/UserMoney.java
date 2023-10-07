@@ -4,10 +4,21 @@ public class UserMoney {
     private static final int THOUSAND = 1000;
     private static final int ZERO = 0;
     private final int money;
+    private final int lottoGameNumber;
+
 
     public UserMoney(String moneyString){
         money = convertMoney(moneyString);
         checkException(moneyString);
+        lottoGameNumber = calculateLottoGameNumber();
+    }
+
+    public int getMoney(){
+        return money;
+    }
+
+    public int getLottoGameNumber(){
+        return lottoGameNumber;
     }
 
     private int convertMoney(String moneyString){
@@ -36,5 +47,9 @@ public class UserMoney {
 
     private boolean isDividedByThousand(){
         return money % THOUSAND == ZERO;
+    }
+
+    private int calculateLottoGameNumber(){
+        return money / THOUSAND;
     }
 }
