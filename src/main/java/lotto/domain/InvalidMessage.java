@@ -8,7 +8,10 @@ public enum InvalidMessage {
     LOTTO_NUMBER_IS_NOT_IN_RANGE("1 ~ 45사이의 수를 입력해주세요."),
     LOTTO_NUMBER_IS_DUPLICATED("서로 다른 수를 입력해주세요."),
     LOTTO_NUMBER_LENGTH_IS_NOT_SIX("6개의 수를 입력해주세요."),
-    LOTTO_NUMBER_HAS_OTHER_SEPARATOR("구분자는 ,로 입력해주세요.");
+    BONUS_NUMBER_IS_NOT_NUMBER("입력한 보너스 번호가 수가 아닌 값입니다."),
+    BONUS_NUMBER_IS_NOT_IN_RANGE("1 ~ 45사이의 수를 입력해주세요."),
+    BONUS_NUMBER_IS_NOT_UNIQUE("로또 번호와 중복된 값을 입력했습니다."),
+    BONUS_NUMBER_LENGTH_IS_NOT_ONE("보너스 번호는 1개만 입력해야 합니다.");
 
     private static final String ERROR = "[ERROR] ";
     private final String errorMessage;
