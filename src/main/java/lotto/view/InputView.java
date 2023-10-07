@@ -16,4 +16,9 @@ public class InputView {
         System.out.println(INPUT_WINNING_NUMBER_MESSAGE);
         return Console.readLine();
     }
+
+    public static String enterBonusNumber(){
+        System.out.println(INPUT_BONUS_NUMBER_MESSAGE);
+        return Console.readLine();
+    }
 }
